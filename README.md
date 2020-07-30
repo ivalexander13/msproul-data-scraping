@@ -20,7 +20,7 @@ The source code for scraping UC Berkeley's Callink website, to obtain publicly a
 - Look at the *-sample files to see what the corresponding files should contain.
 - Obtaining all-cut.html involves hand-clicking "load more" (a lot). The website disallows bots from sending those button requests and I'm not trying to break any rules.
 - The .jsons aren't produced in this version of the script but is very helpful to look at.
-- In 2018, someone by the name of Daniel Beadle scraped his high school organization's website that happens to use the same CampusLabs platform as UC Berkeley. You can check it out [here](https://danielbeadle.net/post/2018-04-14-scraping-react-with-python/) 
+- In 2018, someone by the name of Daniel Beadle scraped his high school organization's website that happens to use the same CampusLabs platform as UC Berkeley. You can check it out [here](https://danielbeadle.net/post/2018-04-14-scraping-react-with-python/).
 - The link/dir containing all the orgs is /organizations/, but the one for each org is /organization/XXXXX. Notice the plural v. singular.
 
 ## Known Issues
