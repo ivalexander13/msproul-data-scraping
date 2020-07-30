@@ -6,5 +6,5 @@ all-links.txt
 !all-cut-sample.html
 
 *.json
-!rso-x-sample.html
+!rso-x-sample.json
 
