@@ -25,7 +25,7 @@ django-crispy-forms==1.9.2
 entrypoints==0.3
 filelock==3.0.12
 flake8==3.8.3
-httplib2==0.14.0
+httplib2==0.18.1
 hyperlink==19.0.0
 idna==2.8
 importlib-metadata==1.5.0
@@ -77,7 +77,7 @@ PyNaCl==1.3.0
 pyOpenSSL==19.0.0
 pyrsistent==0.15.5
 pyserial==3.4
-python-apt==2.0.0
+python-apt==2.0.0+ubuntu0.20.4.1
 python-dateutil==2.8.1
 python-debian===0.1.36ubuntu1
 pytz==2020.1
@@ -99,7 +99,7 @@ systemd-python==234
 toml==0.10.1
 tornado==6.0.4
 traitlets==4.3.3
-Twisted==18.9.0
+Twisted==20.3.0
 ubuntu-advantage-tools==20.3
 ufw==0.36
 unattended-upgrades==0.1
