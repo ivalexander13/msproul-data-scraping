@@ -35,7 +35,7 @@ class RsoSpider(scrapy.Spider):
             "keyname": jload['organization'].get('websiteKey', ''),
             "rso_email": jload['organization'].get('email', ''),
             "description": jload['organization'].get('description', ''),
-            "summary": jload['organization'].get('summary', ''), # FIXME may need to scan for "Grant applications page"
+            "summary": jload['organization'].get('summary', ''), 
             "active_status": jload['organization'].get('status', ''),
             "start_date": jload['organization'].get('startDate', ''),
             "end_date": jload['organization'].get('endDate', ''),
@@ -59,9 +59,6 @@ class RsoSpider(scrapy.Spider):
             "priv_email": jload['organization']['primaryContact'].get('primaryEmailAddress', ''),
             "priv_prefname": jload['organization']['primaryContact'].get('preferredFirstName', ''),
             "priv_phone": jload['organization']['contactInfo'][0].get('phoneNumber', ''),
-            # exploratory data; they are all the same! Exclude.
-            # "institution_id": jload['organization'].get('institutionId', ''),
-            # "community_id": jload['organization'].get('communityId', ''),
         }
 
         file_exists = os.path.isfile("all-rso.csv")
@@ -71,7 +68,7 @@ class RsoSpider(scrapy.Spider):
             )
 
             if not file_exists:
-                writer.writeheader()  # file doesn't exist yet, write a header
+                writer.writeheader()
 
             writer.writerow(fields)
 
