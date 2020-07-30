@@ -1,0 +1,10 @@
+__pycache__/
+*.csv
+all-links.txt
+
+*.html
+!all-cut-sample.html
+
+*.json
+!rso-x-sample.html
+
